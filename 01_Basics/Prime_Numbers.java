@@ -18,14 +18,15 @@ public class Prime_Numbers {
             numbers[i]=sc.nextInt();
         }
 
-        for(int j=0;j<=numbers.length;j++){
-            for(int k=1; k<=numbers[j]/2;k++){
+        for(int j=0;j<numbers.length;j++){
+            count=0;
+            for(int k=1; k<=Math.sqrt(numbers[j]);k++){
                 if(numbers[j]%k == 0 ){
                     count++;
                 }
                 
             }
-            if(count>1){System.out.println(numbers[j]+"is not prime");}
+            if(count>1){System.out.println(numbers[j]+" is not prime");}
                 else{System.out.println(numbers[j]+" is prime");}
         }
         sc.close();
