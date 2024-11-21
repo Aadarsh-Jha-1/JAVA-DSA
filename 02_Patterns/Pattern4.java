@@ -8,8 +8,8 @@ public class Pattern4 {
         System.out.println("Enter The Number of lines of stars you want to print : ");
         int n = sc.nextInt();
 
-        int sp = 0;
-        int st = n;
+        int sp = n-1;
+        int st = 1;
 
         for(int i = 1 ; i<=n; i++){
 
@@ -28,8 +28,8 @@ public class Pattern4 {
 
 
           
-            sp++;
-            st--;
+            sp--;
+            st = st+2;
             System.out.println();
             sc.close();
         }
