@@ -10,15 +10,20 @@ public class Pattern13 {
 
         int n = sc.nextInt();
 
-        for(int i=1; i<=n; i++){
+        for(int i=0; i<n; i++){
+
+            int IcJ = 1; //(Combination of permutation and combination)
+
+           for(int j=0;j<=i;j++){
 
             
-            int j =1;
+                System.out.print(IcJ+"\t");
 
-            while(j<=i){
-               
-                j++;
-            }
+                int IcJp1 = (IcJ*(i-j))/(j+1);
+
+                IcJ = IcJp1;
+            
+           }
 
             System.out.println();
 
